@@ -1,0 +1,416 @@
+/* Global Styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /*font family */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  color: rgba(16, 16, 24, 0.7);
+  font-size: 1.8rem;
+}
+
+/*navbar styling*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(73, 79, 82);
+  color: #ff5353;
+  font-size: 2rem;
+}
+#hamburger-menu,
+#hamburger-menu-button {
+  display: none;
+}
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.navStyle {
+  color: #ff5353;
+  text-decoration: none;
+}
+.actual-links {
+  background-color: rgb(73, 79, 82);
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+#headphones {
+  width: 5rem;
+  height: 5rem;
+}
+/* Body Styling*/
+.hero {
+  max-width: 100%;
+  height: auto;
+}
+#oxymusic {
+  color: #ff5353;
+  text-align: center;
+}
+#features {
+  color: #ff5353;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.features_heading {
+  color: #ff5353;
+  text-align: center;
+}
+.about_oxymusic,
+.features_text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.download_button {
+  background-color: #ff5353;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 20rem;
+  cursor: pointer;
+}
+
+.download-link {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(73, 79, 82);
+  flex-direction: row;
+  color: #ff5353;
+  padding-top: 2rem;
+}
+
+.social-icons {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+.social-icons:hover {
+  transform: translateY(-4px);
+}
+
+/*Blogs Styling */
+#blogs_image {
+  max-width: 100%;
+  height: auto;
+}
+#blogs_heading {
+  text-align: center;
+  color: #ff5353;
+}
+#about_blogs {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+/*Contact Us Styling */
+#contact_us_image {
+  max-width: 100%;
+  height: auto;
+}
+
+#contact_us_title {
+  text-align: center;
+  color: #ff5353;
+}
+
+/*form styling*/
+.form-submit {
+  max-width: 500px;
+  margin: auto;
+  border: #ff5353 2px solid;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+label {
+  display: block;
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+}
+
+#submit-button {
+  border: 0;
+  background-color: #ff5353;
+  padding: 1rem 0.5rem;
+  color: white;
+  border-radius: 5rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: transparent;
+  border: 2px solid #ff5353;
+  color: #ff5353;
+  font-size: 2rem;
+}
+
+/* Admin Styling*/
+.sent_messages {
+  display: block;
+}
+
+.admin-section {
+  text-align: center;
+  color: #fff;
+  background-color: #ff5353;
+  height: 5rem;
+  padding-top: 1rem;
+}
+
+.sent_message {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.delete_message {
+  background-color: #ff5353;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 20rem;
+}
+
+/* Media Queries*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  /*navbar styling*/
+  nav {
+    display: flex;
+    min-height: 10vh;
+    background-color: rgb(73, 79, 82);
+    color: #ff5353;
+    font-size: 2rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s linear;
+    list-style-type: none;
+  }
+
+  .show-nav {
+    height: 100px;
+    background-color: rgb(73, 79, 82);
+    width: 100%;
+    font-size: 2rem;
+  }
+  #hamburger-menu,
+  #hamburger-menu-button {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  /* Body Styling*/
+  .hero {
+    max-width: 100%;
+    height: auto;
+  }
+  #oxymusic {
+    color: #ff5353;
+    text-align: center;
+  }
+  #features {
+    color: #ff5353;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .features_heading {
+    color: #ff5353;
+    text-align: center;
+  }
+  .about_oxymusic,
+  .features_text {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .download_button {
+    background-color: #ff5353;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 20rem;
+  }
+
+  .footer {
+    display: block;
+    min-height: 10vh;
+    background-color: rgb(73, 79, 82);
+  }
+
+  .contact_developer {
+    display: block;
+    color: #ff5353;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .social-icons {
+    display: inline;
+    height: 3rem;
+    margin-left: 6rem;
+  }
+  .developer {
+    display: block;
+    color: #ff5353;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /*Blogs Styling */
+  #blogs_image {
+    max-width: 100%;
+    height: auto;
+  }
+  #blogs_heading {
+    text-align: center;
+    color: #ff5353;
+  }
+  #about_blogs {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  /*Contact Us Styling */
+  #contact_us_image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #contact_us_title {
+    text-align: center;
+    color: #ff5353;
+  }
+
+  /*form styling*/
+  .form-submit {
+    max-width: 500px;
+    margin: auto;
+    border: #ff5353 2px solid;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  label {
+    display: block;
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: none;
+  }
+
+  #submit-button {
+    border: 0;
+    background-color: #ff5353;
+    padding: 1rem 0.5rem;
+    color: white;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+
+  /* end of media query */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

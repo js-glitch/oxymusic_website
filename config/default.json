@@ -1,0 +1,4 @@
+{
+    "mongoURI" : "mongodb+srv://Oxymusic:Magician23@cluster0.jewfv.mongodb.net/oxyApp?retryWrites=true&w=majority" ,
+    "jwtSecret" : "jwt_secret"
+}

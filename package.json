@@ -1,0 +1,31 @@
+{
+  "name": "oxymusic",
+  "version": "1.0.0",
+  "description": "Oxymusic App",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\"  \"npm run client \" ",
+    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION = false npm install --prefix client && npm it add run build --prefix client"
+  },
+  "author": "John Ngala",
+  "license": "MIT",
+  "dependencies": {
+    "-": "0.0.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.3",
+    "create-react-app": "^4.0.1",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
