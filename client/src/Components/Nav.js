@@ -27,7 +27,7 @@ export class Nav extends Component {
                 </nav>
                 <div className ="actual-links">
                     <ul className = {this.state.isOpen ? "nav-links show-nav" : "nav-links"} >  
-                    <li> <Link className ="navStyle" to = '/'><li>Home</li></Link></li>
+                    <li> <Link className ="navStyle" to = '/'><li>Home11121212</li></Link></li>
                     <li> <Link className ="navStyle" to = '/blogs'><li>Blogs</li></Link></li>
                     <li><Link className ="navStyle" to = '/contact'><li>Contact</li></Link></li>
                     </ul>
